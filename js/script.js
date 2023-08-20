@@ -39,6 +39,24 @@ window.onscroll = () => {
 
 
 /*==================== scroll reveal ====================*/
+ScrollReveal({
+    distance : "30px",
+    duration : 200,
+    reset: true,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .skill-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 /*==================== typed js ====================*/
+const typed = new Typed('.multiple-text',{
+    strings: ['Frontend Developer, Python Developer, YouTuber'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+})
